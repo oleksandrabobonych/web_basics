@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content />
+    <title>Моя перша HTML форма</title>
+  </head>
+  <body>
+    <h1>Моя перша HTML-форма</h1>
+    <form action="https://httpbin.org/get" method="get">
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="dob">Дата народження:</label>
+      <input type="date" id="dob" name="dob" /><br /><br />
+      <label>Імейл: <input type="email" name="email" /> </label><br /><br />
+      <label for="message">Повідомлення:</label><br />
+      <textarea id="message" name="message"></textarea><br /><br />
+      <input type="submit" value="Надіслати" />
+      <input type="reset" value="Очистити" /><br /><br />
+      <label>Ваші улюблені напої: </label><br />
+      <input type="checkbox" id="coffee" name="drink" value="Кава" />
+      <label for="coffee">Кава</label><br />
+      <input type="checkbox" id="tea" name="drink" value="Чай" />
+      <label for="tea">Чай</label><br />
+      <input type="checkbox" id="juice" name="drink" value="Сік" />
+      <label for="juice">Сік</label><br />
+      <input type="checkbox" id="water" name="drink" value="Вода" />
+      <label for="water">Вода</label><br /><br />
+      <label>Моя національність:</label><br />
+      <input type="radio" id="ukrainian" name="nationality" value="Українець" />
+      <label for="ukrainian">Українець</label><br />
+      <input type="radio" id="italian" name="nationality" value="Італієць" />
+      <label for="italian">Італієць<label><br>
+        <input type="radio" id="german" name="nationality" value="Німець">
+        <label for="german">Німець<label><br>
+    </form>
+    <picture>
+      <source
+        srcset="https://fastly.picsum.photos/id/701/300/500.jpg?hmac=1X0PZXxLovYg8Gbrwc6a8qV-IO9VIeZ7ijopL1MpNyE"
+        media="(max-width: 468px)"
+      />
+
+      <img
+        src="https://fastly.picsum.photos/id/877/1000/400.jpg?hmac=dyZqJi4vp96aHJXxawzl3MKUR0VadVNnD8F18kwiwGo"
+      />
+    </picture>
+  </body>
+</html>
